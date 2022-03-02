@@ -1,0 +1,42 @@
+.feature {
+    text-align: center;
+    margin-top: 1cm;
+    padding: 20px;
+
+
+}
+
+.men {
+    text-align: center;
+    margin-top: 1cm;
+    padding: 20spx;
+
+}
+
+
+.color {
+    color: rgb(3, 16, 77);
+    font-style: normal;
+    font-family: 'Anton', sans-serif;
+}
+
+.cards {
+    position: relative;
+    cursor: pointer;
+    transition-duration: .5s;
+    /* 5px rounded corners */
+}
+
+
+.cards:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1s.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+.cards:hover .img {
+    filter: brightness(100%);
+    transition-duration: all .2s;
+}

@@ -1,0 +1,10 @@
+h1 {
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(4, 41, 39);
+}
+
+.cart {
+    font-size: large;
+    font-weight: 900;
+}
