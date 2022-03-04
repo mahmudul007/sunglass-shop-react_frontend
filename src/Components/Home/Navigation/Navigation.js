@@ -2,30 +2,11 @@ import React from 'react';
 import { Button, Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
 import './Navigation.css';
 import { BsCart4 } from "react-icons/bs";
-
-
 const Navigation = () => {
-
-
-
-
-
     return (
 
         <Navbar className="justify-content-center" bg="light" expand="lg">
             <Container fluid>
-
-                {/* <Form className="d-flex">
-                    <FormControl
-                        type="search"
-                        placeholder="Search"
-                        className="me-2"
-                        aria-label="Search"
-                    />
-                    <Button variant="outline-success">Search</Button>
-                </Form> */}
-
-
                 <Navbar.Collapse >
                     <Navbar.Text>
                         <Form className="d-flex">

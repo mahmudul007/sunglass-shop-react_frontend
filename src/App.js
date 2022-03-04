@@ -9,6 +9,9 @@ import {
   Link
 } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
+import Login from './Components/Authentication/Login/Login';
+import Register from './Components/Authentication/Register/Register';
+import Cart from './Components/Cart/Cart';
 
 
 function App() {
@@ -17,11 +20,23 @@ function App() {
       <Router>
         <Switch>
 
-          <Route path='/'>
+          <Route path='/home'>
             <Home></Home>
-
+          </Route>
+          <Route exact path='/login'>
+            <Login></Login>
 
           </Route>
+          <Route path='/register'>
+            <Register></Register>
+
+          </Route>
+          <Route path='/cart'>
+            <Cart></Cart>
+
+          </Route>
+
+
         </Switch>
 
       </Router>

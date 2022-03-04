@@ -11,6 +11,7 @@ import Navigation from '../Navigation/Navigation';
 import Slider from '../Slider/Slider';
 
 
+
 const Home = () => {
     return (
         <>
