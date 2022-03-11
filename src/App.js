@@ -12,6 +12,7 @@ import Home from './Components/Home/Home/Home';
 import Login from './Components/Authentication/Login/Login';
 import Register from './Components/Authentication/Register/Register';
 import Cart from './Components/Cart/Cart';
+import Error from './Components/Error/Error';
 
 
 function App() {
@@ -33,6 +34,10 @@ function App() {
           </Route>
           <Route path='/cart'>
             <Cart></Cart>
+
+          </Route>
+          <Route path='*'>
+            <Error></Error>
 
           </Route>
 

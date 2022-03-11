@@ -1,0 +1,12 @@
+.bg {
+
+
+    background: url('./error.jpg') top center;
+    background-size: cover;
+
+    height: 100vh;
+
+    border: 1px solid rgb(219, 10, 10);
+}
+
+#button {}
