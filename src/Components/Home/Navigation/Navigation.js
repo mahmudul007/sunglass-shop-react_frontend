@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
 import './Navigation.css';
 import { BsCart4 } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 const Navigation = () => {
     return (
 
@@ -22,7 +23,7 @@ const Navigation = () => {
                 </Navbar.Collapse>
                 <Navbar className="justify-content-end">
                     <Navbar.Text>
-                        <h1  > SUNGLASS SHOP</h1>
+                        <Link to={`/`} >   <h1  > SUNGLASS SHOP</h1></Link>
                     </Navbar.Text>
                 </Navbar>
 
@@ -39,16 +40,27 @@ const Navigation = () => {
                     </Nav>
 
                 </Navbar.Collapse>
-                < BsCart4 className='cart'></BsCart4>
+                <Link to={`/cart`}> < BsCart4 className='cart bg-dark'></BsCart4 ></Link>
                 <Navbar.Collapse className="justify-content-end">
 
 
                     <Navbar.Text>
                         Signed in as: <a href="#login">Mark Otto</a>
                     </Navbar.Text>
+                    <Link to={`/register`} >
+                        <Navbar.Text>
+                            Regsiter
+                        </Navbar.Text>
+                    </Link>
+                    <Link to={`/login`} >
+                        <Navbar.Text>
+                            Log In
+                        </Navbar.Text>
+                    </Link>
+
                 </Navbar.Collapse>
             </Container>
-        </Navbar>
+        </Navbar >
     );
 };
 
