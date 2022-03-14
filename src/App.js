@@ -5,14 +5,14 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
 import Login from './Components/Authentication/Login/Login';
 import Register from './Components/Authentication/Register/Register';
 import Cart from './Components/Cart/Cart';
 import Error from './Components/Error/Error';
+import Product from './Components/Products/Product/Product';
 
 
 function App() {
@@ -34,6 +34,10 @@ function App() {
           </Route>
           <Route path='/cart'>
             <Cart></Cart>
+
+          </Route>
+          <Route path='/product'>
+            <Product></Product>
 
           </Route>
           <Route path='*'>
